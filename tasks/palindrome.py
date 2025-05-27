@@ -1,6 +1,6 @@
 import re
 
-def check_str(s: str):
+def check_str(s: str) -> bool:
     sentence = re.sub('[^A-z]', '', s).lower()
     flag = True
 
