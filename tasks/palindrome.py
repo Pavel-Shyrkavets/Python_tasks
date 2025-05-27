@@ -1,0 +1,11 @@
+import re
+
+def check_str(s: str):
+    sentence = re.sub('[^A-z]', '', s).lower()
+    flag = True
+
+    for x in range(len(sentence) // 2):
+        if sentence[x] != sentence[-1 - x]:
+            flag = False
+
+    return flag
