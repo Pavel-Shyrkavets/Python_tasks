@@ -16,7 +16,7 @@ class Teacher(SchoolMember):
         self.salary = salary
 
     def show(self) -> str:
-        return f"Name: {self.name}, Age: {self.age}, Salary: {self.salary}"
+        return f"Name: {self.name}, Age: {self.age} years old, Salary: {self.salary:.2f} USD"
 
 class Student(SchoolMember):
     def __init__(self, name, age, grades):
@@ -24,4 +24,4 @@ class Student(SchoolMember):
         self.grades = grades
 
     def show(self) -> str:
-        return f"Name: {self.name}, Age: {self.age}, Grades: {self.grades}"
+        return f"Name: {self.name}, Age: {self.age} years old, Grades: {self.grades} points"

@@ -1,8 +1,7 @@
-from time import sleep
 from typing import Dict
 from datetime import datetime
 
-execution_time: Dict[str, float] = {}
+execution_time: Dict[str, int] = {}
 
 def time_decorator(func):
     """
@@ -17,16 +16,9 @@ def time_decorator(func):
         total = func(a, b)
         end = datetime.now()
         diff = end - start
-        execution_time[func.__name__] = float(diff.total_seconds())
+        execution_time[func.__name__] = diff.microseconds
         return total
     return wrapper
 
-@time_decorator
-def func_add(a, b):
-    sleep(0.2)
-    return a + b
-
-#x, y = 10, 20
-#result = func_add(x, y)
-#print(f"{x} + {y} = {result}")
-#print(f"Execution time: {execution_time['func_add']} seconds")
+def print_execution_time():
+    print(f"Execution time in microseconds: {execution_time}")

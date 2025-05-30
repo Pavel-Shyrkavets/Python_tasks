@@ -1,7 +1,7 @@
 import re
 
 def check_str(s: str) -> bool:
-    sentence = re.sub('[^A-z]', '', s).lower()
+    sentence = re.sub('[^A-z0-9]', '', s).lower()
     flag = True
 
     for x in range(len(sentence) // 2):

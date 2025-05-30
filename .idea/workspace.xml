@@ -36,6 +36,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.longest_word.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mongodb_query.executor&quot;: &quot;Run&quot;,
     &quot;Python.mysql_connection.executor&quot;: &quot;Run&quot;,
     &quot;Python.palindrome.executor&quot;: &quot;Run&quot;,
     &quot;Python.school_member.executor&quot;: &quot;Run&quot;,
