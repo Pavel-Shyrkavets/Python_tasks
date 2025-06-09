@@ -2,6 +2,7 @@ from tasks.longest_word import get_longest_word
 from tasks.palindrome import check_str
 from tasks.school_member import Teacher, Student
 from tasks.time_decorator import time_decorator, print_execution_time
+from tasks.epam_plot import plot
 
 if __name__ == '__main__':
     phrase = "short longer longest"
@@ -24,3 +25,5 @@ if __name__ == '__main__':
     result = func_add(x, y)
     print_execution_time()
     print(f"{x} + {y} = {result}")
+
+    plot()
